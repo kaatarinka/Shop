@@ -12,8 +12,10 @@
  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
   <h1 class="my-0 mr-md-auto font-weight-bold">Kate's SHOP</h1>
   <nav class="my-2 my-md-0 mr-md-3">
-    <span class="p-2 text-dark"><%= link_to "Все товары", items_path, {:class=> 'btn btn-secondary btn-sm'}  %></span>
-    <span class="p-2 text-dark"><%= link_to "Выйти", cancel_user_registration_path, {:class=> 'btn btn-secondary btn-sm'}  %></span>
+    <span class="p-2 text-dark"><%= link_to "Все товары", items_path, {:class=> 'btn  btn-sm'}  %></span>
+    <span class="p-2 text-dark"><%= link_to "Корзина", carts_path, {:class=> 'btn btn btn-sm'}  %></span>
+    <span class="p-2 text-dark"><%= link_to "Выйти", cancel_user_registration_path, {:class=> 'btn btn btn-sm'}  %></span>
+    
   </nav>
  <p class="notice"><%= notice %></p>
 </div>

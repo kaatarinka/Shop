@@ -5,6 +5,8 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
     @items = Item.all
+   # @pagy, @items = pagy(Items.all, page: params[:page], items: 9)
+  
   end
 
   # GET /items/1
